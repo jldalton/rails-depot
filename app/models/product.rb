@@ -21,4 +21,7 @@ class Product < ActiveRecord::Base
                       message: 'must be a URL for GIF, JPG or PNG image.' 
                     }
 
+  validates :title, length: {minimum: 10}
+  validates_length_of :title, minimum: 10, message: "What kind of title is less than 10 chars!?"
+
 end
