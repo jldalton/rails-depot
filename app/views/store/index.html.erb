@@ -4,11 +4,11 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
-<div class="counter">
+<!--<div class="counter">
   <% if @count > 5 %>
     <%= " You've been here #{pluralize(@count, 'time')}. Are you going to buy anything?" %>
   <% end %>
-</div>
+</div>-->
 
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
